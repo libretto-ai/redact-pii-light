@@ -5,13 +5,7 @@ export class SimpleRegexpRedactor implements ISyncRedactor {
   regexpMatcher: RegExp;
   replaceWith: string;
 
-  constructor({
-    replaceWith,
-    regexpPattern: regexpMatcher
-  }: {
-    replaceWith: string;
-    regexpPattern: RegExp;
-  }) {
+  constructor({ replaceWith, regexpPattern: regexpMatcher }: { replaceWith: string; regexpPattern: RegExp }) {
     this.replaceWith = replaceWith;
     this.regexpMatcher = regexpMatcher;
   }
